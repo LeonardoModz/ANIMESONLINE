@@ -1,66 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LEO MODS YOUTUBE CONVERTER</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKE HACK BY LEO MODS OFC</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-dark">
-  <div class="col-md-6 offset-md-3 mt-5">
-    <div class="card">
-      <div class="card-header bg-info">
-        <h5>LEO MODS YOUTUBE CONVERTER</h5>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label class="text-weight"><b>INSIRA A URL DO VIDEO YT:</b></label>
-              <input type="txt" name="link" class="form-control link" required>
-            </div>
-          </div>
-        </div>
-        <form class="form-download">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label class="text-weight"><b>SELECIONE O FORMATO DO VIDEO:</b></label>
-                <select class="form-control formte" required>
-                  <option selected disabled>SELECIONE O FORMATO DO VIDEO</option>
-                  <option value="mp3">MP3</option>
-                  <option value="mp4a">144 Mp4</option>
-                  <option value="360">360 MP4</option>
-                  <option value="480">480 MP4</option>
-                  <option value="720">720 MP4</option>
-                  <option value="1080">1080 MP4</option>
-                  <option value="4k">4K MP4</option>
-                  <option value="8k">8K MP4</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group mt-4 download-video">
-                <button class="btn btn-success btn-block click-btn-down" type="submit">ABAIXAR VIDEO</button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+<body>
+    <div id="loadingScreen">Carregando...</div>
+    <div id="hackScreen" style="display: none;">
+        <p id="progressText"></p>
+        <div id="hackDetails"></div>
+        <!-- <audio id="hackMusic" src="your-audio-file.mp3" preload="auto"></audio> -->
+        <audio id="hackMusic" src="music.mp3" type="audio/mp3" preload="auto" loop></audio>
     </div>
-  </div>
+    <script src="script.js"></script>
 </body>
-                          <script type="text/javascript">
-                             $(".click-btn-down").click(function(){
-                             var link = $(".link").val();
-                             var fromate = $(".formte").children("option:selected").val();
-                             var src =""+link+"="+fromate+"";
-                             downloadVideo(link,fromate);
-                              });
-                             function downloadVideo(link,fromate) {
-                             $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
-                                      }
-                          </script>
 </html>
