@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>LEO MODS OFUSCADOR (BETA)</h1>
+    <title>LEO MODS LUA OFUSCADOR</title>
     <link rel="canonical" href="https://lua-obfuscator.netlify.app" />
     <link rel="shortcut icon" href="img/favicon.ico">
     <style>
@@ -114,15 +114,15 @@
 </head>
 <body>
     <div id="container">
-        <h1>LEO MODS OFUSCADOR (BETA)</h1>
+        <h1>LEO MODS LUA OFUSCADOR</h1>
         <form id="luaForm">
             <label for="luaFile">ESCOLHA UM ARQUIVO LUA:</label>
             <input type="file" id="luaFile" accept=".lua">
             <br>
-            <input type="submit" value="OFUSCAR">
+            <input type="submit" value="PROTEGER">
         </form>
         <button id="downloadButton">BAIXAR</button>
-        <h2>Resultado</h2>
+        <h2>RESULTADO</h2>
         <pre id="encodedOutput">O CÓDIGO OFUSCADO APARECERÁ AQUI APÓS A OFUSCAÇÃO</pre>
     </div>
     <script>
@@ -161,7 +161,7 @@
                 const encodedBlob = new Blob([loadstringCall], { type: "text/plain;charset=utf-8" });
                 const downloadLink = document.createElement("a");
                 downloadLink.href = URL.createObjectURL(encodedBlob);
-                downloadLink.download = "PROTECT.lua";
+                downloadLink.download = "obfuscate.lua";
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
                 document.body.removeChild(downloadLink);
