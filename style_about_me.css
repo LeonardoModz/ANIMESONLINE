@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Rubik+Glitch+Pop&display=swap');
+
+
+body{
+    background-image: url('../img/aboutme2.png');
+    width: 600px;
+    height: 900px;
+    margin: auto;
+    font-family: Acme;
+    text-shadow: 2px 2px 2px rgb(35, 34, 34);
+    background-size:cover;
+    /* background-attachment: fixed; */
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    border-radius: 200px;
+    margin: 5px;}
+
+#nav{   
+        background-color: rgba(255, 255, 255, 0.954);
+        margin-top: 100px  ;
+        margin-bottom: 10px  ;
+        border-radius: 30px;}
+
+.aboutmetitle{
+            background-color: rgba(226, 15, 15, 0.228);
+            color: rgb(247, 255, 129);
+            border-radius: 30px;
+            padding: 10px;
+            margin: 5px;
+            }
+
+#home{
+    background-color: #058aff48 ;                
+    padding: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 3px;
+            }
+body{
+    background-color: rgb(181, 181, 181);
+}   
+         
+
+#home{
+    transition: 5ms;
+}
+
+#home a  :hover{
+    color: rgb(221, 76, 76);
+    transition: 0.5s;
+    
+}  
